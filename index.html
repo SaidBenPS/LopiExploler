@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LopiExploler - Smart File Organizer</title>
+    <!-- إضافة الكلمات الدلالية لمحركات البحث -->
+    <meta name="keywords" content="Lopirture, Lopi, Lopiexploler, file organizer, python app, windows tool">
+    <meta name="description" content="A lightweight, transparent desktop application for Windows that automatically sorts your downloads.">
+    
+    <!-- أيقونة الموقع (Favicon) في شريط المتصفح العلوي -->
+    <link rel="icon" type="image/png" href="https://icons.iconarchive.com/icons/papirus-team/papirus-places/128/folder-blue-download-icon.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #11111b;
+            color: #cdd6f4;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #313244;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-img {
+            width: 40px;
+            height: 40px;
+        }
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #89b4fa;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .app-icon {
+            width: 110px;
+            height: 110px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0px 8px 16px rgba(0,0,0,0.5));
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #cdd6f4;
+        }
+        .hero h1 span {
+            color: #89b4fa;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: #a6adc8;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .download-btn {
+            background-color: #a6e3a1;
+            color: #11111b;
+            padding: 16px 38px;
+            font-size: 1.15rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 18px rgba(166, 227, 161, 0.3);
+        }
+        .download-btn:hover {
+            background-color: #94e2d5;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 22px rgba(148, 226, 213, 0.4);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            padding: 30px 10% 60px 10%;
+        }
+        .feature-card {
+            background-color: #181825;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #313244;
+            transition: 0.3s;
+        }
+        .feature-card:hover {
+            border-color: #89b4fa;
+            transform: translateY(-4px);
+        }
+        .feature-card h3 {
+            color: #89b4fa;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .feature-card p {
+            color: #a6adc8;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #313244;
+            color: #6c7086;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="https://icons.iconarchive.com/icons/papirus-team/papirus-places/128/folder-blue-download-icon.png" alt="LopiExploler Icon" class="logo-img">
+            <span class="logo-text">LopiExploler</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="https://icons.iconarchive.com/icons/papirus-team/papirus-places/128/folder-blue-download-icon.png" alt="LopiExploler Icon" class="app-icon">
+            <h1>The Ultimate <span>Smart File Organizer</span></h1>
+            <p>A lightweight, transparent desktop application for Windows that automatically sorts your downloads, supports custom themes, and keeps your desktop clean and structured.</p>
+            
+            <!-- زر التحميل بالرابط المباشر -->
+            <a href="https://drive.usercontent.google.com/download?id=1AMlYxWN0XqihzwjxKKUZBgTXBK1Utcq7&export=download&authuser=0&confirm=t&uuid=ffd36449-f29f-442a-bab2-f6922324d03c&at=AMrWOn2FCPD62J-fIx0giCXBFQFv%3A1793213334507" class="download-btn">
+                <span>⬇ Download LopiExploler.exe</span>
+            </a>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>⚡ Auto Organization</h3>
+                <p>Monitors your downloads in real-time and organizes files into Images, Videos, Documents, and more inside your desktop folder.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎨 Custom Transparency</h3>
+                <p>Features a sleek, draggable transparent floating UI that adapts to your preferred colors and opacity levels.</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚙ .lopi Settings</h3>
+                <p>Saves all your preferences, custom themes, and language choices directly into a dedicated .lopi configuration file.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🌐 Multi-Language</h3>
+                <p>Fully supports English (Default) and Arabic interfaces with seamless switching from the options menu.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 LopiExploler. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
